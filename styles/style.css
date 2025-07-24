@@ -52,3 +52,17 @@ body {
   align-items: center;
   gap: 10px;
 }
+
+@media only screen and (max-width: 576px) {
+  .d-none {
+    display: none;
+  }
+
+  .navbar {
+    margin: 0 1rem;
+  }
+
+  .navbar .logo img {
+    width: 63px;
+  }
+}
