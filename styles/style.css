@@ -17,9 +17,6 @@ body {
   font-optical-sizing: auto;
 }
 
-.container {
-}
-
 header {
   max-width: 1170px;
   margin: 0 auto;
@@ -168,11 +165,6 @@ main {
   position: relative;
 }
 
-#plants-lover .section-img .img {
-  /* width: 540px; */
-  /* width: 50%; */
-}
-
 #plants-lover .section-img .badge {
   width: 286px;
   position: absolute;
@@ -181,10 +173,6 @@ main {
   /* box-shadow: -4px 10px 4px rgba(0, 0, 0, 0.499); */
 }
 
-#plants-lover .section-content {
-  /* margin: 38px 0; */
-  /* width: 50%; */
-}
 #plants-lover .section-content h1 {
   margin-bottom: 20px;
   font-size: 3rem;
@@ -287,6 +275,8 @@ main {
 
 /* latest deal  section ends here  */
 
+/* Join section starts here  */
+
 #join {
   height: 533px;
   max-width: 100%;
@@ -333,6 +323,10 @@ main {
   color: white;
 }
 
+/* Join section starts here  */
+
+/* footer starts here  */
+
 .footer {
   background-color: #ffffff7f;
   padding: 50px 0;
@@ -373,6 +367,9 @@ main {
   height: 36px;
   margin-left: 24px;
 }
+/* footer starts here  */
+
+/* Responsive starts here ========================== */
 @media only screen and (max-width: 576px) {
   .d-none {
     display: none;
