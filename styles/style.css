@@ -27,6 +27,7 @@ body {
   align-items: center;
   margin-top: 30px;
   height: 71px;
+  margin-bottom: 7.5rem;
 }
 
 .navbar .logo img {
@@ -53,6 +54,35 @@ body {
   gap: 10px;
 }
 
+/* banner section start here  */
+.banner {
+  display: flex;
+  height: 461px;
+  align-items: flex-end;
+}
+.banner .banner-content {
+  width: 100%;
+}
+
+.banner .banner-content h1 {
+  font-size: 4rem;
+  color: var(--primary-color);
+  font-family: "Noto Serif", serif;
+}
+.banner .banner-content p {
+  font-size: 1.375rem;
+  font-weight: 300;
+  color: var(--paragraph-color);
+}
+
+.banner .banner-content span {
+  color: var(--secondary-color);
+}
+.banner .banner-img {
+  width: 100%;
+}
+/* banner section ends here  */
+
 @media only screen and (max-width: 576px) {
   .d-none {
     display: none;
@@ -60,9 +90,31 @@ body {
 
   .navbar {
     margin: 0 1rem;
+    margin-bottom: 1.75rem;
   }
 
   .navbar .logo img {
     width: 63px;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    height: auto;
+    gap: 24px;
+  }
+  .banner .banner-content {
+    width: auto;
+    margin: 0 16px;
+  }
+
+  .banner .banner-content h1 {
+    font-size: 1.5rem;
+  }
+  .banner .banner-content p {
+    font-size: 1rem;
+    margin-top: 13px;
+  }
+  .banner .banner-img {
+    width: auto;
   }
 }
