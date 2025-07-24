@@ -18,6 +18,14 @@ body {
 }
 
 .container {
+}
+
+header {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+main {
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -279,6 +287,92 @@ body {
 
 /* latest deal  section ends here  */
 
+#join {
+  height: 533px;
+  max-width: 100%;
+
+  background-image: url("../assets/news-letter-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#join .join-content h1 {
+  font-size: 3.125rem;
+  color: white;
+  font-family: "Noto Serif", serif;
+  text-align: center;
+  margin-bottom: 23px;
+}
+
+#join .join-content {
+  width: 60%;
+}
+
+.subscribe {
+  display: flex;
+  width: 100%;
+}
+.subscribe label {
+  flex: 9;
+}
+
+.subscribe input {
+  padding: 1rem;
+  width: 100%;
+  border: none;
+}
+.subscribe button {
+  flex: 3;
+  margin: 0;
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+}
+
+.footer {
+  background-color: #ffffff7f;
+  padding: 50px 0;
+}
+
+.footer-content {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.logo-side {
+  flex: 2;
+}
+
+.logo-side p {
+  font-size: 1.3rem;
+  color: var(--paragraph-color);
+  margin-top: 16px;
+}
+
+.links {
+  flex: 1;
+}
+
+.links ul li {
+  color: var(--paragraph-color);
+  margin-bottom: 26px;
+}
+
+.social {
+  flex: 2;
+}
+
+.social img {
+  width: 36px;
+  height: 36px;
+  margin-left: 24px;
+}
 @media only screen and (max-width: 576px) {
   .d-none {
     display: none;
@@ -365,9 +459,9 @@ body {
   }
 
   #latest-deal {
-    height: ;
     margin-left: 16px;
     margin-right: 16px;
+    margin-bottom: 45px;
   }
   #latest-deal .section-title {
     margin-bottom: 50px;
@@ -396,5 +490,30 @@ body {
   }
   #latest-deal .img-container .img-3 .content a {
     font-size: 1rem !important;
+  }
+
+  #join {
+    height: 275px;
+  }
+  #join .join-content {
+    width: 70%;
+  }
+
+  #join .join-content h1 {
+    font-size: 1.4rem;
+  }
+  .logo-side {
+    margin-bottom: 26px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    margin: 0 16px;
+    gap: 10px;
+  }
+
+  .social img {
+    margin-left: 0;
+    margin-right: 16px;
   }
 }
