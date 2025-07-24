@@ -59,6 +59,7 @@ body {
   display: flex;
   height: 461px;
   align-items: flex-end;
+  margin-bottom: 120px;
 }
 .banner .banner-content {
   width: 100%;
@@ -83,6 +84,70 @@ body {
 }
 /* banner section ends here  */
 
+/* our plants section start here  */
+
+#Our-plants {
+  margin-bottom: 120px;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.section-title h1 {
+  font-size: 3.13rem;
+  color: var(--primary-color);
+  font-family: "Noto Serif", serif;
+  margin-bottom: 16px;
+}
+.section-title span {
+  color: var(--secondary-color);
+}
+
+.section-title p {
+  margin: 0 auto;
+  width: 70%;
+  font-size: 1.375rem;
+  color: var(--paragraph-color);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.card .card-img img {
+  width: 100%;
+}
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  font-size: 1.375rem;
+  text-align: center;
+}
+
+.card-content .card-info p {
+  margin-bottom: 20px;
+}
+
+.card-btn {
+  background-color: var(--primary-color);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  padding: 20px 0;
+  font-size: 1rem;
+  width: 100%;
+}
+/* our plants section ends here  */
+
 @media only screen and (max-width: 576px) {
   .d-none {
     display: none;
@@ -101,6 +166,7 @@ body {
     flex-direction: column-reverse;
     height: auto;
     gap: 24px;
+    margin-bottom: 65px;
   }
   .banner .banner-content {
     width: auto;
@@ -116,5 +182,32 @@ body {
   }
   .banner .banner-img {
     width: auto;
+  }
+
+  #Our-plants {
+    margin-bottom: 42px;
+  }
+
+  .section-title {
+    margin-bottom: 28px;
+  }
+
+  .section-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .section-title p {
+    font-size: 0.9rem;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 16px;
+  }
+  .card .card-content {
+    font-size: 1rem;
+  }
+  .card-content .card-info p {
+    margin-bottom: 10px;
   }
 }
