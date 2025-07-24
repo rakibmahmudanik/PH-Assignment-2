@@ -87,7 +87,7 @@ body {
 /* our plants section start here  */
 
 #Our-plants {
-  margin-bottom: 120px;
+  margin-bottom: 210px;
 }
 .section-title {
   text-align: center;
@@ -147,6 +147,137 @@ body {
   width: 100%;
 }
 /* our plants section ends here  */
+
+/* Plants lover section starts here  */
+#plants-lover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 133px;
+}
+#plants-lover .section-img {
+  position: relative;
+}
+
+#plants-lover .section-img .img {
+  /* width: 540px; */
+  /* width: 50%; */
+}
+
+#plants-lover .section-img .badge {
+  width: 286px;
+  position: absolute;
+  top: -120px;
+  right: -100px;
+  /* box-shadow: -4px 10px 4px rgba(0, 0, 0, 0.499); */
+}
+
+#plants-lover .section-content {
+  /* margin: 38px 0; */
+  /* width: 50%; */
+}
+#plants-lover .section-content h1 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-family: "Noto Serif", serif;
+  color: var(--secondary-color);
+}
+#plants-lover .section-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+#plants-lover .section-content ul li {
+  list-style-type: disc;
+  color: var(--paragraph-color);
+  font-size: 1.375rem;
+}
+/* Plants lover section ends here  */
+
+/* latest deal  section starts here  */
+#latest-deal {
+  margin-bottom: 120px;
+}
+#latest-deal .section-title {
+  margin-bottom: 120px;
+}
+#latest-deal .img-container {
+  display: flex;
+  gap: 28px;
+  height: 423px;
+  font-family: "Noto Serif", serif;
+}
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#latest-deal .left {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 25px;
+}
+
+#latest-deal .img-container .content {
+  text-align: center;
+}
+
+#latest-deal .img-container .content p {
+  color: white;
+  text-align: center;
+  margin-bottom: 19px;
+
+  font-size: 1.3rem;
+}
+#latest-deal .img-container .content a {
+  color: white;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+.img-1 {
+  height: 201px;
+
+  border-radius: 22px;
+  background-image: url("../assets/deal-bloom.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #2524328c;
+  background-blend-mode: multiply;
+}
+.img-2 {
+  height: 197px;
+
+  border-radius: 22px;
+
+  background-image: url("../assets/deal-ana.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #2524328c;
+  background-blend-mode: multiply;
+}
+
+.img-3 {
+  flex: 7;
+
+  border-radius: 22px;
+
+  background-image: url("../assets/deal-zabo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #25243277;
+  background-blend-mode: multiply;
+}
+
+/* latest deal  section ends here  */
 
 @media only screen and (max-width: 576px) {
   .d-none {
@@ -209,5 +340,61 @@ body {
   }
   .card-content .card-info p {
     margin-bottom: 10px;
+  }
+
+  #plants-lover {
+    flex-direction: column;
+    gap: 18px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  #plants-lover .section-img .img {
+    width: 100%;
+  }
+
+  #plants-lover .section-img .badge {
+    display: none;
+  }
+
+  #plants-lover .section-content h1 {
+    font-size: 1.5rem;
+  }
+
+  #plants-lover .section-content ul li {
+    font-size: 0.9rem;
+  }
+
+  #latest-deal {
+    height: ;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  #latest-deal .section-title {
+    margin-bottom: 50px;
+  }
+  #latest-deal .img-container {
+    flex-direction: column;
+    gap: 20px;
+    height: 600px;
+    justify-content: flex-start;
+  }
+  .left {
+    gap: 0;
+  }
+  .img-1 {
+    border-radius: 14px;
+  }
+  .img-2 {
+    border-radius: 14px;
+  }
+  .img-3 {
+    border-radius: 14px;
+  }
+
+  #latest-deal .img-container .img-3 .content p {
+    font-size: 1.3rem !important;
+  }
+  #latest-deal .img-container .img-3 .content a {
+    font-size: 1rem !important;
   }
 }
